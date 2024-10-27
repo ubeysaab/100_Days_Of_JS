@@ -1,0 +1,162 @@
+:root {
+  --baseColor: #49A6EA;
+  --secondColor: #102B42;
+}
+
+*,
+*::before,
+*::after {
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #F1F5F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main__title {
+  color: var(--secondColor);
+  margin-bottom: 0.8rem;
+}
+
+#line {
+  width: 4rem;
+  height: 4px;
+  background-color: var(--baseColor);
+}
+
+.main__section {
+  background-color: white;
+  width: 80%;
+  height: 60vh;
+  border-radius: 0.5rem;
+  /* display: flex; */
+
+  /* justify-content: center; */
+  text-align: center;
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+
+
+.section__image {
+  margin-inline: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  position: relative;
+  z-index: 5;
+
+}
+
+
+.section__image::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: var(--baseColor);
+  border-radius: 50%;
+  transform: translate(-95px, -2px);
+
+  z-index: -1;
+
+}
+
+
+.section__image::before {
+  position: absolute;
+  content: "";
+
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: var(--baseColor);
+  background-image: url(./assets/icons8-quotes-50.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transform: translateX(-40%);
+}
+
+
+.section__image>img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+
+
+}
+
+
+
+.section__name {
+  color: var(--secondColor);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.section__job {
+  color: var(--baseColor);
+  margin-top: 5px;
+}
+
+
+.section__buttons>button,
+.section__buttons>div>button {
+  background-color: transparent;
+  color: var(--baseColor);
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 5px;
+
+  /* this apprach doesn't work for this design */
+  /*// border: 3px solid;  border-image: linear-gradient(126deg, var(--baseColor) 50%, var(--secondColor) 50%);  border-image-slice: 1;  /* border-image-width:;   border-radius: 15px; */
+
+
+  /* alternative  */
+
+  background: linear-gradient(127deg, rgb(151, 205, 243), white) padding-box, linear-gradient(166deg, var(--baseColor) 50%, var(--secondColor) 50%) border-box;
+  border-radius: 9px;
+  border: 2px solid transparent;
+  padding-inline: 12px;
+
+}
+
+
+.section__description {
+  color: #657E98;
+  margin-top: 5px;
+}
+
+.section__buttons>div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+
+
+}
+
+.section__buttons>div>button {
+  background: none;
+  border: none;
+  padding: 5px;
+  font-size: 2rem;
+}
