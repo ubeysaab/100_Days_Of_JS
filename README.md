@@ -10,7 +10,15 @@ Here’s an improved version with those additions:
 
 # 100 Days of JavaScript 🖥️🚀
 
-Welcome to my JavaScript journey! I’m committing to code every day for 100 days to deepen my skills, build coding discipline, and become a more confident developer. This repo will be my learning playground, featuring daily challenges, mini-projects, and explorations of key JavaScript concepts from beginner to advanced.
+Welcome to my JavaScript journey! I’m committing to code every day for 100 days to deepen my skills, build coding discipline, and become a more confident developer.
+
+
+
+
+> "We first make our habits, then our habits make us. 
+
+
+ This repo will be my learning playground, featuring daily challenges, mini-projects, and explorations of key JavaScript concepts from beginner to advanced.
 
 ## 📅 Challenge Outline
 
@@ -45,3 +53,7 @@ On Day 100, I plan to create a final project that brings together what I’ve le
 
 ---
 
+
+## Resources 
+
+[40 JavaScript Projects for Beginners – Easy Ideas to Get Started Coding JS](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#heading-how-to-create-a-counter)
