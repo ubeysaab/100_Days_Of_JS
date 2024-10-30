@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  width: 100%;  
+  height: 100vh;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+main {
+  background-color: aquamarine;
+  height: 50vh;
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid grey;
+  border-radius: 50vw;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+
+}
+
+.buttons{
+  margin-top: 2rem;
+}
