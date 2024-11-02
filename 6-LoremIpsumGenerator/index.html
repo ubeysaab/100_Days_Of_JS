@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <main>
+
+      <div>
+        <label for="paragraph">Paragraph</label>
+        <input type="range" name="paragraph" id="paragraph" min="1" max="10" value="0" step="1">
+        <span id="paragraphText"></span>
+      </div>
+
+      <div>
+        <label for="wpp">Words Per Paragraph</label>
+        <input type="range" name="wpp" id="wpp" min="15" max="100" value="35">
+        <span id="wppText"></span>
+      </div>
+
+      <!-- <div>
+        <label for="wlength">Word length</label>
+        <input type="range" name="wlength" id="wlength" min="2" max="10">
+        <input type="range" name="wlength" id="wlength2" min="2" max="10">
+      </div> -->
+
+
+      <select id="elem">
+        <option value="">--Please choose an option--</option>
+        <option value="p">p</option>
+        <option value="b">b</option>
+      </select>
+
+
+      <select name="" id="insert">
+        <option value=""> insert Html</option>
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+
+      <button id="generate"> generate </button>
+
+
+      <textarea name="" id="textArea"></textarea>
+    </main>
+
+  </body>
+  <script src="./index.js"></script>
+
+</html>
